@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '&qdu+gquvlxyn+jot@3g!sxu&53wzgpkouz=ji8f8a23pj3+p#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ec2-52-14-185-47.us-east-2.compute.amazonaws.com', '52.14.185.47']
 
 
 # Application definition
@@ -77,8 +77,8 @@ WSGI_APPLICATION = 'biblioteca.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'biblioteca',
-        'USER': 'postgres',
+        'NAME': 'developer',
+        'USER': 'oliver',
         'PASSWORD': 'elon2831',
         'HOST': 'localhost',
         'PORT': 5432,
